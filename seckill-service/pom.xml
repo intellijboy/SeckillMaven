@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>seck-parent</artifactId>
+        <groupId>com.jxufe.seckill</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>seckill-service</artifactId>
+
+    <name>seckill-service Maven Webapp</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <!--依赖dao模块-->
+        <dependency>
+            <groupId>com.jxufe.seckill</groupId>
+            <artifactId>seckill-dao</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!--依赖dto模块-->
+        <dependency>
+            <groupId>com.jxufe.seckill</groupId>
+            <artifactId>seckill-dto</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!--依赖exception模块-->
+        <dependency>
+            <groupId>com.jxufe.seckill</groupId>
+            <artifactId>seckill-exception</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!--依赖redis模块-->
+        <dependency>
+            <groupId>com.jxufe.seckill</groupId>
+            <artifactId>seckill-redis</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!--依赖枚举模块-->
+        <dependency>
+            <groupId>com.jxufe.seckill</groupId>
+            <artifactId>seckill-enum</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!--service层对事务的依赖-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>4.1.7.RELEASE</version>
+        </dependency>
+
+    </dependencies>
+</project>
